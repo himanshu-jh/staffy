@@ -87,7 +87,7 @@ const { isAuthenticated, isLoading, user } = useKindeBrowserClient();
 
 if (isLoading) return <div><LoadingIcons.Bars /></div>;
 
-if (isAuthenticated) return (
+if (isAuthenticated) { return (
 
     <main className={styles.mainPage721}>
       {/* SECTION 1 */}
@@ -133,7 +133,13 @@ if (isAuthenticated) return (
         </div>
       </div>
     </main>
-    ); 
-    (redirect('/login'));
+    );   
+  } else {
+    // Redirect to login page
+    redirect('/login');
+    // You can add a placeholder or loading state here if needed
+    return <div>Loading...</div>;
   }
+
+  
 export default Home;

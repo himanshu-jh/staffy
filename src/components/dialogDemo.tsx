@@ -84,7 +84,7 @@ export function DialogDemo({ api_url }: DialogDemoProps) {
         <DialogHeader>
           <DialogTitle>Add New Employee</DialogTitle>
           <DialogDescription>
-            Add details for the new employee. Click save when you're done.
+            Add details for the new employee. Click save when you are done.
           </DialogDescription>
         </DialogHeader>
         <div className="flex flex-row">
