@@ -139,7 +139,7 @@ if (isAuthenticated) { return (
     redirect('/login');
     // You can add a placeholder or loading state here if needed
     return <div>Loading...</div>;
-  }
+  }}
 
   
 export default Home;
