@@ -128,7 +128,7 @@ if (isAuthenticated) { return (
             <PaymentTab apiUrl={apiUrl+apiTxnRoute} />
           </div>
           <div className="mt-3 flex flex-grow h-full flex-col">
-            <DataTable user={selectedOption?.value}/>
+            <DataTable user={selectedOption?.value || ''}/>
           </div>
         </div>
       </div>
