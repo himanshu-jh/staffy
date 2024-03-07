@@ -1,0 +1,203 @@
+.selected {
+  position: relative;
+  font-size: var(--components-helper-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--typography-md-600-15);
+  color: var(--slate-900);
+  text-align: left;
+}
+.tabItem {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-xs);
+  background-color: var(--color-white);
+  border-radius: var(--br-10xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.unselected {
+  position: relative;
+  font-size: var(--components-helper-size);
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--typography-md-600-15);
+  color: var(--slate-700);
+  text-align: left;
+}
+.tabItem1,
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tabItem1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-xs);
+  background-color: transparent;
+  border-radius: var(--br-10xs);
+}
+.tabs {
+  border-radius: var(--br-7xs);
+  background-color: var(--slate-100);
+  padding: var(--padding-8xs);
+}
+.date,
+.makeChangesTo {
+  position: relative;
+  line-height: 20px;
+}
+.makeChangesTo {
+  width: 350px;
+  color: var(--slate-500);
+  display: none;
+}
+.date {
+  font-weight: 500;
+}
+.button,
+.default {
+  border-radius: var(--br-7xs);
+}
+.default {
+  border: 1px solid var(--slate-300);
+  outline: 0;
+  font-family: var(--typography-md-600-15);
+  font-size: var(--components-helper-size);
+  background-color: var(--color-white);
+  flex: 1;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-xs);
+  color: var(--slate-900);
+}
+
+.inputwithButton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  color: var(--color-white);
+}
+
+.input {
+  width: 279px;
+  gap: var(--gap-7xs);
+}
+.input,
+.input1,
+.inputParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input1 {
+  align-self: stretch;
+  gap: var(--gap-7xs);
+}
+.inputParent {
+  gap: var(--gap-5xs);
+}
+.continue {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.button2, .buttonx2 {
+  border: none;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Button2 specific styling */
+.buttonx2 {
+  background-color: #E47474; /* Set the desired color for button2 */
+}
+
+/* Button2x specific styling */
+.button2 {
+  background-color: var(--color-cornflowerblue);/* Set the desired color for button2x */;
+}
+
+
+
+/* .buttonx2 {
+  border: none;
+  border-radius: var(--br-7xs);
+  background-color: #E47474; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.button2 {
+  border: none; 
+  border-radius: var(--br-7xs);
+  background-color: var(--color-cornflowerblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-base);
+  color: var(--color-white);
+} */
+
+.inputwithButton2 {
+  border: 1px solid var(--slate-300);
+  outline: 0;
+  font-family: var(--typography-md-600-15);
+  font-size: var(--components-helper-size);
+  background-color: var(--color-white);
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-xs);
+  color: var(--slate-900);
+}
+.makeChangesToYourAccountHParent {
+  gap: var(--gap-mini);
+}
+.makeChangesToYourAccountHParent,
+.tabCard,
+.tabsAndContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tabCard {
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--slate-200);
+  padding: var(--padding-mini);
+}
+.tabsAndContent {
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--components-helper-size);
+  color: var(--slate-900);
+  font-family: var(--typography-md-600-15);
+}

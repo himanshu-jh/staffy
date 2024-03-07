@@ -1,0 +1,213 @@
+.mybooks {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.mypeople,
+.staffSection1 {
+  align-self: stretch;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-3xs);
+}
+.staffSection1 {
+  /* width: 302px; */
+  flex-grow: 1;
+  border-radius: 1px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  padding: var(--padding-5xs) var(--padding-smi) var(--padding-5xl)
+    var(--padding-base);
+  box-sizing: border-box;
+  gap: 4px;
+}
+.name {
+  cursor: pointer;
+  width: 86px;
+  position: relative;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  flex-shrink: 0;
+}
+.inputsoft,
+.nameOfTheStaff {
+  display: flex;
+  justify-content: flex-start;
+}
+.inputsoft {
+  border: 0;
+  outline: 0;
+  font-family: var(--typography-md-600-15);
+  font-size: var(--typography-md-600-15-size);
+  background-color: var(--neutral-soft-bg);
+  width: 525.5px;
+  border-radius: var(--br-7xs);
+  box-shadow: var(--joy-shadow-xs);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-5xs) var(--padding-xs);
+  box-sizing: border-box;
+  color: var(--neutral-soft-color);
+}
+.nameOfTheStaff {
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+.nameAndDateFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 40px;
+  align-self: stretch;
+}
+.employees {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  top: 16.67%;
+  right: 16.67%;
+  bottom: 8.33%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon1 {
+  height: 58.75%;
+  width: 58.75%;
+  top: 7.92%;
+  right: 7.92%;
+  bottom: 33.33%;
+  left: 33.33%;
+}
+.iconedit {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.employeesParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.listGroup {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: var(--components-helper-size);
+  line-height: 20px;
+  color: var(--color-black);
+}
+.scrollArea {
+  flex: 1;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--slate-200);
+  padding: var(--padding-base) var(--padding-xs);
+  gap: var(--gap-3xs);
+  overflow: scroll;
+}
+.employeeDetails,
+.employeeDetailsAndPaymentS,
+.scrollArea {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.employeeDetails {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  padding: var(--padding-3xs) 0 0;
+  height: 100%;
+}
+.employeeDetailsAndPaymentS {
+  gap: var(--gap-sm);
+}
+.employees1 {
+  position: relative;
+  line-height: 14px;
+}
+.body {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-mini);
+  color: var(--slate-900);
+}
+.body,
+.mainPage721,
+.staffDetailsSection2 {
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.staffDetailsSection2 {
+  align-self: stretch;
+  flex-grow: 4;
+  flex-basis: 0;
+  flex-direction: column;
+  padding: var(--padding-7xs) var(--padding-5xl) var(--padding-5xl)
+    var(--padding-smi);
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-xl);
+}
+
+
+.mainPage721 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: auto;
+  /* max-height: 100vh; */
+  height: 100vh;
+  overflow: hidden; /* Comment out or remove this line */
+  flex-direction: row;
+  text-align: left;
+  font-size: 32px;
+  color: var(--color-black);
+  font-family: var(--typography-md-600-15);
+}
+
+.data_table {
+  width: 100%;
+}
+
+.body {
+  /* max-height: max-content;   */
+  margin: 0;
+  padding: 0;
+
+}
