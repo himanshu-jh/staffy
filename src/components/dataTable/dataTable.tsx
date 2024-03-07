@@ -22,11 +22,12 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { dataColumns } from '@/components/dataTable/columns';
 import { Payment } from './columns';
 
-interface dataTableProps {
+type DataTableProps = {
   user: string;
-}
+};
 
-export function DataTable({ user }) {
+
+export const DataTable: React.FC<DataTableProps> = ({ user }) => {
     const [sorting, setSorting] = useState<SortingState>([])
     const [data, setData] = useState<Payment[]>([]);
     const columns = dataColumns;
@@ -35,7 +36,7 @@ export function DataTable({ user }) {
       const fetchData = async () => {
         try {
           // Use the fetch API for client-side data fetching
-          const response = await fetch('http://localhost:5100/api/transactions/'+{user}); // Update the API endpoint
+          const response = await fetch(`http://localhost:5100/api/transactions/${user}`); // Update the API endpoint
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
@@ -47,7 +48,7 @@ export function DataTable({ user }) {
       };
   
       fetchData();
-    }, []); // Empty dependency array ensures it runs only once on mount
+    }, [user]); // Empty dependency array ensures it runs only once on mount
 
   const table = useReactTable({
     data,
