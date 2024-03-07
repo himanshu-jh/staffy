@@ -14,11 +14,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-export function ProfileDropdownMenu({ userName }) {
+interface dropdownMenuProps {
+  userName: string;
+}
+
+export const ProfileDropdownMenu: React.FC<dropdownMenuProps> = ({ userName }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

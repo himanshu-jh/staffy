@@ -23,11 +23,12 @@ interface EmployeeDetails {
   email: string;
   address: string;
 }
+
 export interface DialogDemoProps {
   api_url: string;
 }
 
-export function DialogDemo({ api_url }: DialogDemoProps) {
+export const DialogDemo: React.FC<DialogDemoProps> = ({ api_url }) => {
   const [open, setOpen] = useState(false);
   const [employeeDetails, setEmployeeDetails] = useState<EmployeeDetails>({
     name: "",
@@ -48,14 +49,14 @@ export function DialogDemo({ api_url }: DialogDemoProps) {
 
   const handleSave = async () => {
     try {
-      const response = await fetch({api_url}, {
+      const response = await fetch(api_url, {  // Use api_url directly here
         method: "POST", // or "PUT" if you are updating existing data
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(employeeDetails),
       });
-
+  
       if (response.ok) {
         console.log("Employee details saved successfully!");
       } else {
@@ -64,7 +65,7 @@ export function DialogDemo({ api_url }: DialogDemoProps) {
     } catch (error) {
       console.error("Error during API call:", error);
     }
-
+  
     // After successful API request, close the dialog
     setOpen(false);
   };

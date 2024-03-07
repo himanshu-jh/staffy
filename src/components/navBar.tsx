@@ -1,8 +1,13 @@
 import { FunctionComponent, useState, useRef, useCallback } from "react";
 import styles from "./navBar.module.css";
 import { ProfileDropdownMenu } from "./profileDropdown";
+import React from 'react';
 
-const NavBar: FunctionComponent = ({userName}) => {
+interface NavBarProps {
+  userName: string | null | undefined;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ userName }) => {
   const profileContainerRef = useRef<HTMLDivElement>(null);
   const [isDropdownMenuOpen, setDropdownMenuOpen] = useState(false);
 
@@ -21,7 +26,7 @@ const NavBar: FunctionComponent = ({userName}) => {
           ref={profileContainerRef}
           // onClick={openDropdownMenu}
         >
-          <ProfileDropdownMenu userName={userName}/>
+          <ProfileDropdownMenu userName={userName || ''}/>
         </div>
       </nav>
     </>
