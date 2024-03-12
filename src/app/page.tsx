@@ -25,10 +25,6 @@ const apiEmpNameRoute = 'api/employees/names';
 
 
 function Home () {
-  
-  
-
-
 
   // Employee Names as Options
   const [employeeNames, setEmployeeNames] = useState<Option[]>([]);
@@ -59,28 +55,6 @@ function Home () {
   
  // Search selection
  const [selectedOption, setSelectedOption] = useState<Option | null>(null); 
-
-// // Kinde
-// const {
-//   permissions,
-//   isLoading,
-//   user,
-//   accessToken,
-//   organization,
-//   userOrganizations,
-//   getPermission,
-//   getBooleanFlag,
-//   getIntegerFlag,
-//   getFlag,
-//   getStringFlag,
-//   getClaim,
-//   getAccessToken,
-//   getToken,
-//   getIdToken,
-//   getOrganization,
-//   getPermissions,
-//   getUserOrganizations
-// } = useKindeBrowserClient();
 
 
 const { isAuthenticated, isLoading, user } = useKindeBrowserClient();
