@@ -69,7 +69,7 @@ if (isAuthenticated) { return (
         
         <div className={styles.mypeople}>
           {/* user indicates the names of logged in user */}
-          <h1 className={styles.mybooks}>noze.one</h1>
+          <img src="/zamy_text.png" alt="Logo" className="mb-4 mx-auto" style={{ maxWidth: '180px' }} />
         </div>
 
         <div className={styles.employeeDetails}>
