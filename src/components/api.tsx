@@ -28,7 +28,7 @@ export const useEmployeeNames = () => {
     // Call the fetchEmployeeNames function when this hook is used
     useState(() => {
         fetchEmployeeNames();
-    }, []);
+    });
 
     return employeeNames;
 };
