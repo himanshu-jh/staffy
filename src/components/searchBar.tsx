@@ -6,7 +6,6 @@ import { useState, useRef, useCallback, type KeyboardEvent } from "react"
 
 // import { Command } from "@/components/ui/command"
 
-import styles from "@/components/page.module.css"
 
 import { Skeleton } from "./ui/skeleton"
 import { cn } from "@/lib/utils"

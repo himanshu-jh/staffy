@@ -32,7 +32,7 @@ function Home () {
 
 const { isAuthenticated, isLoading, user } = useKindeBrowserClient();
 
-if (isLoading) return <div><LoadingIcons.Bars /></div>;
+if (isLoading) return <div><LoadingIcons.Circles /></div>;
 
 if (isAuthenticated) { return (
 
