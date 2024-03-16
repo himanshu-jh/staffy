@@ -1,13 +1,11 @@
 "use client"
 
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
-import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
-
 
 import styles from "./page.module.css";
 import { Option, AutoComplete } from "@/components/searchBar";
 import PaymentTab from "@/components/paymentsSection";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { DataTable } from "@/components/dataTable/dataTable"
 import EmployeeDetailsTable from "@/components/employeeDetailsTab";
@@ -23,35 +21,10 @@ const apiTxnRoute = 'api/transactions';
 const apiEmpDetailsRoute = 'api/employees';
 const apiEmpNameRoute = 'api/employees/names';
 
+import { useEmployeeNames } from "@/components/api";
 
 function Home () {
-
-  // Employee Names as Options
-  const [employeeNames, setEmployeeNames] = useState<Option[]>([]);
-
-  useEffect(() => {
-    const fetchEmployeeNames = async () => {
-      try {
-        const response = await fetch(apiUrl+apiEmpNameRoute); // Replace with your API endpoint
-        if (response.ok) {
-          const data = await response.json();
-
-          // Convert the fetched data into the Option type
-          const options = data.map((employee: { name: any; }) => ({
-            label: employee.name,
-            value: employee.name,
-          }));
-          setEmployeeNames(options);
-        } else {
-          console.error('Failed to fetch employee names');
-        }
-      } catch (error) {
-        console.error('Error during API call:', error);
-      }
-    };
-
-    fetchEmployeeNames();
-  }, []);
+  const employeeNames = useEmployeeNames();
   
  // Search selection
  const [selectedOption, setSelectedOption] = useState<Option | null>(null); 
